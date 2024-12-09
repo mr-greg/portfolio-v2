@@ -1,14 +1,15 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000e1;
+  --orange: #ff7370;
+  --strong: #E85E5E;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 html,
 body {
@@ -19,7 +20,8 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +37,21 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+strong {
+  color: #E85E5E
+}
+
+p {
+  color: #0b1215;
+  font-size: 18px;
+}
+
+h2 {
+  color: #0b1215;
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
