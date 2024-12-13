@@ -2,7 +2,8 @@
 const nextConfig = {
     compiler: {
         styledComponents: true,
-    }
+    },
+    distDir: 'build',
 };
 
 export default nextConfig;
