@@ -1,6 +1,6 @@
 import "./globals.css";
+import "./embla.css";
 import StyledComponentsRegistry from "./lib/registry";
-import "./globals.css";
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({

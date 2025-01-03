@@ -15,6 +15,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +50,31 @@ p {
 h2 {
   color: #0b1215;
 }
+
+.logo {
+  cursor: pointer;
+}
+
+.backToTopBtn {
+  background-color: #E85E5E;
+  display: inline;
+  padding: 30px;
+  border-radius: 100% 0 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.backToTopBtn > * {
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   html {

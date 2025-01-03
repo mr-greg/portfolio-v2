@@ -71,7 +71,7 @@ export default function Toolbox() {
   };
 
   return (
-    <StyledToolbox>
+    <StyledToolbox data-bg-color="#E85E5E">
       <h2>Ma boîte à outils</h2>
       <StyledSection>
         <h3>Front-End</h3>

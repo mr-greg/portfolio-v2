@@ -63,7 +63,19 @@ const StyledAbout = styled.section`
             gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
-    }
+
+            div {
+                border: 1px solid var(--orange);
+            }
+
+            div:hover {
+                color: var(--orange);
+                background-color: white;
+                .icon {
+                    color: var(--orange);
+                }
+            }
+        }
     }
 
 

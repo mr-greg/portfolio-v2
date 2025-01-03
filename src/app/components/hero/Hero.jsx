@@ -21,7 +21,11 @@ export default function Hero() {
                 <div className="title">
                     <h1>
                         Développeur Web
-                        <Image src={"/img/wave.png"} alt="emoji signe de main" width={58} height={58}/>
+                        {/* <Image src={"/img/wave.png"} alt="emoji signe de main" width={58} height={58}/> */}
+                        <picture>
+                            <source srcSet="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp" type="image/webp" />
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" alt="👋" width="58" height="58" />
+                        </picture>
                     </h1>
                 </div>
                 <div className="text">
@@ -46,7 +50,6 @@ export default function Hero() {
                 <Image
                     src={"/img/isometric-desktop.png"} 
                     alt="office developer room illustration" 
-                    layout="responsive"
                     width={550} 
                     height={400}
                     priority

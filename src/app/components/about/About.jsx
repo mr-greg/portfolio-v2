@@ -21,7 +21,7 @@ export default function About() {
     { name: 'Musculation', icon: <BiDumbbell />},
   ]
   return (
-    <StyledAbout>
+    <StyledAbout id='about'>
         <h2>À propos</h2>
         <div className="about-container">
             <Image src={"/img/isometric-about.png"} alt="a propos illustration bureau isometrique" width={500} height={500}/>

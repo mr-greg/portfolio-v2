@@ -43,7 +43,7 @@ export const StyledButton = styled.div`
   gap: 8px;
   text-align: center;
   white-space: nowrap;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-bottom: 5px;
 
   .icon {

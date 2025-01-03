@@ -1,6 +1,5 @@
 const { default: styled } = require("styled-components");
 
-
 const StyledHero = styled.section`
     padding: 50px 15%;
     display: flex;
@@ -97,20 +96,28 @@ const StyledHero = styled.section`
 
 
     @media (max-width: 580px) {
-
+        height: auto;
         .presentation {
+            flex: none;
             max-width: 100%;
             .title {
                 h1 {
-                    font-size: 3rem;
+                    font-size: 2rem;
+                }
+                img {
+                    width: 35px;
+                    height: 35px;
                 }
             }
             .text {
                 max-width: 100%;
             }
         }
+
         .imgContainer {
+            flex: none;
             max-width: 100%; /* À des résolutions plus petites, l'image prend toute la largeur */
+            justify-content: flex-start;
             img {
                 width: 100%; /* L'image s'adapte encore */
                 height: auto; /* Toujours conserver les proportions */
@@ -118,8 +125,6 @@ const StyledHero = styled.section`
         }
 
     }
-
-
 `
 
 export default StyledHero;
