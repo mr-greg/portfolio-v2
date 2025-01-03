@@ -1,19 +1,26 @@
 'use client';
 import Link from 'next/link';
 import StyledFooter from './StyledFooter';
+import { useState } from 'react';
 
 export default function Footer() {
-    const handleCopy = async () => {
+    const [buttonText, setButtonText] = useState("Contact"); // Définir le texte initial
+    
+      const handleCopy = async () => {
         try {
-            // Attempt to copy the text to clipboard
-            await navigator.clipboard.writeText("gregory.drv@gmail.com");
-
-            // Optional: Provide user feedback (you can use a toast or alert for UX)
-            alert('E-mail copiée dans le presse-papier, merci :)');
+          // Tenter de copier l'adresse e-mail dans le presse-papier
+          await navigator.clipboard.writeText("gregory.drv@gmail.com");
+          // Modifier le texte du bouton
+          setButtonText("E-mail copiée !");
+          // Remettre le texte initial après 2 secondes
+          setTimeout(() => {
+            setButtonText("Contact");
+          }, 2000);
         } catch (err) {
-            console.error('Failed to copy text: ', err);
+          console.error('Failed to copy text: ', err);
         }
-        };
+    };
+
     return (
     <StyledFooter>
         <div className='name'>
@@ -27,7 +34,7 @@ export default function Footer() {
                 <Link href="#about">À propos</Link>
                 <Link href="#projets">Projets</Link>
             </div>
-            <button onClick={handleCopy}>Contact</button>
+            <button onClick={handleCopy}>{buttonText}</button>
         </div>
     </StyledFooter>
   )

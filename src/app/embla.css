@@ -156,6 +156,20 @@
 .embla__parallax__img:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 580px) {
+
+  .project-wrapper {
+    padding: 50px 5%;
+
+    .embla {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+
+}
 .theme-light {
   --brand-primary: rgb(47, 112, 193);
   --brand-secondary: rgb(116, 97, 195);
