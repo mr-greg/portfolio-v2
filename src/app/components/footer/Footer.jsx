@@ -32,7 +32,7 @@ export default function Footer() {
             <div className='nav-container'>
                 <Link href="#accueil">Accueil</Link>
                 <Link href="#about">À propos</Link>
-                <Link href="#projets">Projets</Link>
+                <Link href="#projets" className='footer-project'>Projets</Link>
             </div>
             <button onClick={handleCopy}>{buttonText}</button>
         </div>

@@ -21,8 +21,8 @@ export default function Hero() {
                 <div className="title">
                     <h1>
                         Développeur Web
-                        {/* <Image src={"/img/wave.png"} alt="emoji signe de main" width={58} height={58}/> */}
-                        <picture>
+                        <Image src={"/img/wave.png"} alt="emoji signe de main" width={58} height={58} className='emoji-mobile'/>
+                        <picture className='emoji-desktop'>
                             <source srcSet="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp" type="image/webp" />
                             <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" alt="👋" width="58" height="58" />
                         </picture>

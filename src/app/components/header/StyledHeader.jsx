@@ -26,6 +26,23 @@ const StyledHeader = styled.header`
             display: flex;
             gap: 25px;
 
+            .accueil {
+                position: relative;
+                display: inline-block;
+            }
+
+            .accueil::before {
+                transform: translateX(-50%);
+                border-radius: 100%;
+                position: absolute;
+                background: #E85E5E;
+                top: 25px;
+                height: 4px;
+                width: 4px;
+                content: '';
+                left: 50%;
+            }
+
             a {
                 font-weight: 400;
                 font-size: 18px;

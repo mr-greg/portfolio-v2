@@ -26,6 +26,24 @@ const StyledHero = styled.section`
                 vertical-align: baseline;
                 margin-left: 20px; /* Ajoute un espace entre le mot et l'image */
             }
+
+            .emoji-desktop {
+                display: inline; /* Affiche sur grand écran */
+            }
+
+            .emoji-mobile {
+                display: none; /* Masque sur grand écran */
+            }
+
+            @media (max-width: 768px) {
+                .emoji-desktop {
+                    display: none; /* Masque sur mobile */
+            }
+            
+            .emoji-mobile {
+                display: inline; /* Affiche sur mobile */
+            }
+            }
         }
 
         .text {
@@ -105,8 +123,8 @@ const StyledHero = styled.section`
                     font-size: 2rem;
                 }
                 img {
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
             .text {

@@ -26,6 +26,22 @@ const StyledFooter = styled.footer`
             display: flex;
             gap: 25px;
 
+            .footer-project {
+                position: relative;
+                display: inline-block;
+            }
+            .footer-project::before {
+                transform: translateX(-50%);
+                border-radius: 100%;
+                position: absolute;
+                background: #E85E5E;
+                top: 30px;
+                height: 4px;
+                width: 4px;
+                content: '';
+                left: 50%;
+            }
+
             a {
                 font-weight: 400;
                 font-size: 18px;

@@ -44,7 +44,7 @@ export default function Header() {
       </div>
       <div className='menu'>
         <div className='nav-container'>
-          <Link href="#accueil">Accueil</Link>
+          <Link href="#accueil" className='accueil'>Accueil</Link>
           <Link href="#about">À propos</Link>
           <Link href="#projets">Projets</Link>
         </div>
