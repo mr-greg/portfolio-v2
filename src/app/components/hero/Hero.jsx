@@ -30,8 +30,8 @@ export default function Hero() {
                 </div>
                 <div className="text">
                     <p>
-                        Hello, je suis Grégory Dervyn. Un passionné de <strong>développement web</strong>, situé en France
-                        <Image src={"/img/pin.png"} alt="emoji pin location" width={25} height={25}/>
+                        Hello, je suis Grégory Dervyn. Un passionné de <strong>développement web</strong>, <span className='newline-mobile'>situé en France <Image src={"/img/pin.png"} alt="emoji pin location" width={25} height={25}/></span>
+                        
                     </p>
                 </div>
                 <div className="socials">

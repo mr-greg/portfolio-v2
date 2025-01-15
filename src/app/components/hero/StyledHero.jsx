@@ -21,10 +21,13 @@ const StyledHero = styled.section`
                 position: relative;
                 display: inline;
             }
+        }
+
+        .newline-mobile {
+            display: inline;
+        }
             img {
-                display: inline-block;
                 vertical-align: baseline;
-                margin-left: 20px; /* Ajoute un espace entre le mot et l'image */
             }
 
             .emoji-desktop {
@@ -36,13 +39,18 @@ const StyledHero = styled.section`
             }
 
             @media (max-width: 768px) {
+
+                h1 {
+                    margin: 0 auto;
+                }
+
                 .emoji-desktop {
                     display: none; /* Masque sur mobile */
-            }
+                }
             
-            .emoji-mobile {
-                display: inline; /* Affiche sur mobile */
-            }
+                .emoji-mobile {
+                    display: inline; /* Affiche sur mobile */
+                }
             }
         }
 
@@ -70,7 +78,7 @@ const StyledHero = styled.section`
                 cursor: pointer;
             }
         }
-    }
+    
     .imgContainer {
         flex: 1; /* Laisse l'image prendre l'espace restant */
         display: flex; /* Assure un positionnement centré */
@@ -112,6 +120,12 @@ const StyledHero = styled.section`
         }
     }
 
+    @media (max-width: 650px) {
+        .newline-mobile {
+            display: block !important;
+            margin-top: -2px;
+        }
+    }
 
     @media (max-width: 580px) {
         height: auto;
