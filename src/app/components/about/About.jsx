@@ -24,7 +24,9 @@ export default function About() {
     <StyledAbout id='about'>
         <h2>À propos</h2>
         <div className="about-container">
-            <Image src={"/img/isometric-about.png"} alt="a propos illustration bureau isometrique" width={500} height={500}/>
+            <div className="about-img-container">
+              <Image src={"/img/isometric-about.png"} alt="a propos illustration bureau isometrique" width={500} height={500}/>
+            </div>
             <div className="text-container">
                 <p>
                     <strong>Développeur web</strong> passionné

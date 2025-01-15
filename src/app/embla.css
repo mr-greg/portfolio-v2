@@ -157,6 +157,10 @@
   transform: scale(1.05);
 }
 
+.slide-overlay p {
+  text-align: justify;
+}
+
 @media (max-width: 580px) {
 
   .project-wrapper {

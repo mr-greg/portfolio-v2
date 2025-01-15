@@ -64,6 +64,7 @@ const StyledFooter = styled.footer`
     }
 
     @media (max-width: 670px) {
+        display: none;
         .menu {
             margin-top: 5px;
         }

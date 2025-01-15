@@ -1,7 +1,7 @@
 const { default: styled } = require("styled-components");
 
 const StyledHero = styled.section`
-    padding: 50px 15%;
+    padding: 80px 15% 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -115,6 +115,7 @@ const StyledHero = styled.section`
 
     @media (max-width: 580px) {
         height: auto;
+        text-align: center;
         .presentation {
             flex: none;
             max-width: 100%;
@@ -130,12 +131,15 @@ const StyledHero = styled.section`
             .text {
                 max-width: 100%;
             }
+            .socials {
+                justify-content: center;
+            }
         }
 
         .imgContainer {
             flex: none;
             max-width: 100%; /* À des résolutions plus petites, l'image prend toute la largeur */
-            justify-content: flex-start;
+            justify-content: center;
             img {
                 width: 100%; /* L'image s'adapte encore */
                 height: auto; /* Toujours conserver les proportions */

@@ -27,6 +27,7 @@ const StyledAbout = styled.section`
                 font-size: 18px;
                 margin-bottom: 20px;
                 line-height: 1.6;
+                text-align: justify;
 
                 strong {
                     font-weight: bold;
@@ -42,11 +43,16 @@ const StyledAbout = styled.section`
             }
         }
 
-        img {
+        .about-img-container {
             flex: 1;
             max-width: 50%; /* L'image prend jusqu'à 50% de l'espace */
             height: auto;
-            object-fit: contain;
+            /* object-fit: contain; */
+        }
+
+        img {
+            width: 70%;
+            height: 70%;
         }
     }
 
@@ -98,6 +104,9 @@ const StyledAbout = styled.section`
     /* Responsive pour mobiles */
     @media (max-width: 580px) {
         .about-container {
+            .about-img-container {
+                text-align: center;
+            }
             .text-container {
                 p {
                     font-size: 16px; /* Réduit la taille de la police pour mobile */
